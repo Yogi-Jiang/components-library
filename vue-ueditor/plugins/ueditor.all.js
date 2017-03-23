@@ -29031,14 +29031,11 @@ UE.ui = baidu.editor.ui = {};
 
             //接受外部定制的UI
             utils.each(UE._customizeUI,function(obj,key){
-                console.log('进入函数！')
                 var itemUI,index;
                 if(obj.id && obj.id != editor.key){
                    return false;
                 }
-                console.log('obj', obj)
                 itemUI = obj.execFn.call(editor,editor,key);
-                console.log('定制UI函数执行了')
                 if(itemUI){
                     index = obj.index;
                     if(index === undefined){
