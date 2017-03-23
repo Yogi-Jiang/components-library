@@ -18,7 +18,7 @@
 					let id = new Date().getTime().toString()
 					self.$refs.editor.id = id
 					const editor = UE.getEditor(id, self.UEConfig)
-					self.getUE(editor)
+					self.getEditor(editor)
 
 					editor.ready(function () {
 						editor.setContent(self.composition)
