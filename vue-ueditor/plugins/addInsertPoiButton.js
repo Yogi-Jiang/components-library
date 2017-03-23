@@ -1,4 +1,4 @@
-UE.registerUI('insertPoi',function(editor,uiName){
+UE.registerUI('insertPano',function(editor,uiName){
     //注册按钮执行时的command命令，使用命令默认就会带有回退操作
     editor.registerCommand(uiName,{
         execCommand:function(){
@@ -11,7 +11,7 @@ UE.registerUI('insertPoi',function(editor,uiName){
         //按钮的名字
         name:uiName,
         //提示
-        title:'插入POI',
+        title:'插入资讯',
         //需要添加的额外样式，指定icon图标，这里默认使用一个重复的icon
         cssRules :'background-position: -340px -40px;',
         //点击时执行的命令
@@ -19,7 +19,7 @@ UE.registerUI('insertPoi',function(editor,uiName){
             //这里可以不用执行命令,做你自己的操作也可
            $('#select-poi').modal('show')
            window.insertPoi = function (poi) {
-                editor.execCommand('insertHtml', '<img src="' + poi.titleImage + '" poi-id="' + poi.id + '" class="poi" title="POI">')
+                editor.execCommand('insertHtml', '<img src="' + poi.titleImage + '" poi-id="' + poi.id + '" class="poi" title="资讯">')
                 window.insertPoi = null
             }
         }
