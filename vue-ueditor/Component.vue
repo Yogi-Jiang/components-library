@@ -5,7 +5,7 @@
 <script>
 	import './plugins/addInsertPanoDialog.js'
 	import './plugins/addInsertPoiButton.js'
-	import './plugins/plugins/autoupload.js'
+	import './plugins/autoupload.js'
 
 	export default {
 		name: 'vue-ueditor',
