@@ -3,6 +3,9 @@
 </template>
 
 <script>
+	import 'http://cdn.staticfile.org/ueditor/1.4.3/ueditor.all.js'
+	import 'http://cdn.staticfile.org/ueditor/1.4.3/ueditor.config.js'
+	import 'http://cdn.staticfile.org/ueditor/1.4.3/lang/zh-cn/zh-cn.js'
 	import './plugins/addInsertPanoDialog.js'
 	import './plugins/addInsertPoiButton.js'
 	import './plugins/autoupload.js'
