@@ -491,11 +491,4 @@
 
     }
 
-    console.log('before config.js',window.UE)
-
-    window.UE = {
-        getUEBasePath: getUEBasePath
-    };
-
-    console.log('after config.js',window.UE)
 })();
