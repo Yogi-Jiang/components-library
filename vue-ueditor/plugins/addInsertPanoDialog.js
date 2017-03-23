@@ -1,8 +1,7 @@
 console.log('from node_modules')
 console.log('UE', UE)
 console.log('registerUI', UE.registerUI)
-window.onload = function () {
-    UE.registerUI('insertPano',function(editor,uiName){
+UE.registerUI('insertPano',function(editor,uiName){
 
     //创建dialog
     var dialog = new UE.ui.Dialog({
@@ -51,6 +50,4 @@ window.onload = function () {
     });
 
     return btn;
-} 
-}
-/*index 指定添加到工具栏上的那个位置，默认时追加到最后,editorId 指定这个UI是那个编辑器实例上的，默认是页面上所有的编辑器都会添加这个按钮*/);
+} /*index 指定添加到工具栏上的那个位置，默认时追加到最后,editorId 指定这个UI是那个编辑器实例上的，默认是页面上所有的编辑器都会添加这个按钮*/);
