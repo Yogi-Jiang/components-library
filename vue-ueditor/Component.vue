@@ -14,20 +14,29 @@
 			initEditor () {
 				const self = this
 				this.$nextTick(function () {
-				let id = new Date().getTime().toString()
-				self.$refs.editor.id = id
-				const editor = UE.getEditor(id, self.UEConfig)
-				self.getUE(editor)
+					let id = new Date().getTime().toString()
+					self.$refs.editor.id = id
+					const editor = UE.getEditor(id, self.UEConfig)
+					self.getUE(editor)
 
-				editor.ready(function () {
-					editor.setContent(self.composition)
-					editor.addListener('contentChange', function () {
-						self.$emit('input', editor.getContent())
+					editor.ready(function () {
+						editor.setContent(self.composition)
+						editor.addListener('contentChange', function () {
+							self.$emit('input', editor.getContent())
+						})
+
+						self.$emit('ready', editor)
+						self.hideCustomIcons()
 					})
-
-					self.$emit('ready', editor)
 				})
-			})
+			},
+			hideCustomIcons () {
+				if (!this.businessConfig || !this.businessConfig.hideIcons) return
+				const hideIcons = this.businessConfig.hideIcons
+				hideIcons.forEach((icon) => {
+					const elem = document.getElementsByClassName('edui-for-' + icon)
+					elem.style.display = "none !important"
+				})
 			}
 		},
 		mouted: function () {
