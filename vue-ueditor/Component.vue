@@ -12,7 +12,7 @@
 
 	export default {
 		name: 'vue-ueditor',
-		props: ['UEConfig', 'businessConfig', 'getEditor'],
+		props: ['UEConfig', 'businessConfig', 'getEditor', 'composition'],
 		methods: {
 			initEditor () {
 				const self = this
