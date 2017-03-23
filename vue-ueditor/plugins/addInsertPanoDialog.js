@@ -1,3 +1,4 @@
+console.log('before register', UE._customizeUI)
 UE.registerUI('dialog',function(editor,uiName){
 
     //创建dialog
@@ -48,3 +49,5 @@ UE.registerUI('dialog',function(editor,uiName){
 
     return btn;
 } /*index 指定添加到工具栏上的那个位置，默认时追加到最后,editorId 指定这个UI是那个编辑器实例上的，默认是页面上所有的编辑器都会添加这个按钮*/);
+
+console.log('after register', UE._customizeUI)
