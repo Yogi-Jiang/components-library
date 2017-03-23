@@ -4,6 +4,7 @@
 
 <script>
 	import './plugins/ueditor.config.js'
+	import './plugins/ueditor.all.js'
 	import './plugins/addInsertPanoDialog.js'
 	import './plugins/addInsertPoiButton.js'
 	import './plugins/autoupload.js'
