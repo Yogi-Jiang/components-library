@@ -40,7 +40,7 @@
 				})
 			}
 		},
-		mouted: function () {
+		mounted: function () {
 			this.initEditor()
 		}
 	}
