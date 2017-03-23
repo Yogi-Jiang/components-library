@@ -1,6 +1,3 @@
-console.log('from node_modules')
-console.log('UE', UE)
-console.log('registerUI', UE.registerUI)
 UE.registerUI('insertPano',function(editor,uiName){
 
     //创建dialog
