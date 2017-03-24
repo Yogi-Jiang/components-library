@@ -12,7 +12,7 @@
 
 	export default {
 		name: 'vue-ueditor',
-		props: ['UEConfig', 'businessConfig', 'getEditor', 'composition'],
+		props: ['UEConfig', 'businessConfig', 'composition'],
 		methods: {
 			initEditor () {
 				const self = this
@@ -23,7 +23,6 @@
 					self.getEditor(editor)
 
 					editor.ready(function () {
-						editor.setContent(self.composition)
 						editor.addListener('contentChange', function () {
 							self.$emit('input', editor.getContent())
 						})
