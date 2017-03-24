@@ -20,7 +20,6 @@
 					let id = new Date().getTime().toString()
 					self.$refs.editor.id = id
 					const editor = UE.getEditor(id, self.UEConfig)
-					self.getEditor(editor)
 
 					editor.ready(function () {
 						editor.addListener('contentChange', function () {
