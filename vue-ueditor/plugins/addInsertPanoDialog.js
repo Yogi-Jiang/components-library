@@ -3,7 +3,7 @@ UE.registerUI('dialog',function(editor,uiName){
     //创建dialog
     var dialog = new UE.ui.Dialog({
         //指定弹出层中页面的路径，这里只能支持页面,因为跟addCustomizeDialog.js相同目录，所以无需加路径
-        iframeUrl: 'insertPanoDialogPage.html',
+        iframeUrl: 'https://sinacloud.net/yier-cdn/ueditor/insertPanoDialogPage.html',
         //需要指定当前的编辑器实例
         editor:editor,
         //指定dialog的名字
