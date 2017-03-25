@@ -5,7 +5,7 @@ let config = {
 	entry: "./vue-ueditor/index.js",
 	output: {
 		path: path.join(__dirname, './lib'),
-		filename: 'ueditor.js'
+		filename: 'vueditor.js'
 	},
 	module: {
 		rules: [
@@ -22,6 +22,11 @@ let config = {
 				use: 'file-loader'
 			}
 		]
+	},
+	resolve: {
+		alias: {
+			'vue$': 'vue/dist/vue.esm.js'
+		}
 	}
 }
 
