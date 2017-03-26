@@ -1,4 +1,4 @@
-UE.registerUI('dialog',function(editor,uiName){
+UE.registerUI('insertPano',function(editor,uiName){
 
     //创建dialog
     var dialog = new UE.ui.Dialog({

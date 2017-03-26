@@ -1,4 +1,4 @@
-UE.registerUI('insertPano',function(editor,uiName){
+UE.registerUI('insertPio',function(editor,uiName){
     //注册按钮执行时的command命令，使用命令默认就会带有回退操作
     editor.registerCommand(uiName,{
         execCommand:function(){

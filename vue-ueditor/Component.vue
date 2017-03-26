@@ -32,13 +32,12 @@
 				})
 			},
 			hideCustomIcons () {
-				// if (!this.businessConfig || !this.businessConfig.hideIcons) return
-				// const hideIcons = this.businessConfig.hideIcons
-				// hideIcons.forEach((icon) => {
-				// 	const elem = document.getElementsByClassName('edui-for-' + icon)[0]
-				// 	console.log('elem', elem)
-				// 	elem.style.display = "none !important"
-				// })
+				if (!this.businessConfig || !this.businessConfig.hideIcons) return
+				const hideIcons = this.businessConfig.hideIcons
+				hideIcons.forEach((icon) => {
+					const elem = document.getElementsByClassName('edui-for-' + icon)[0]
+					$(elem).attr('style', 'display: none !important')
+				})
 			}
 		},
 		mounted: function () {
