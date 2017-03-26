@@ -8052,7 +8052,7 @@ UE.Editor.defaultOptions = function(editor){
         initialContent: '',
         initialStyle:'',
         autoClearinitialContent: false,
-        iframeCssUrl: _url + 'themes/iframe.css',
+        iframeCssUrl: editor.customCssFile ? editor.customCssFile : _url + 'themes/iframe.css',
         textarea: 'editorValue',
         focus: false,
         focusInEnd: true,
@@ -27273,7 +27273,8 @@ UE.ui = baidu.editor.ui = {};
             var width = uiUtils.getClientRect(this.getDom('content')).width;
             var dialogBodyStyle = body.style;
             dialogBodyStyle.width = width;
-            return uiUtils.getClientRect(body);
+            document.getElementsByClassName('edui-dialog-content')[0].style.height = "300px";
+            return { width: 600, height: 368, left: 0, top: 0 }
         },
         _onTitlebarMouseDown: function (evt, el){
             if (this.draggable) {
