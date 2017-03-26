@@ -36,7 +36,9 @@
 				const hideIcons = this.businessConfig.hideIcons
 				hideIcons.forEach((icon) => {
 					const elem = document.getElementsByClassName('edui-for-' + icon)[0]
-					$(elem).attr('style', 'display: none !important')
+					if (elem) {
+						$(elem).attr('style', 'display: none !important')
+					}
 				})
 			}
 		},
