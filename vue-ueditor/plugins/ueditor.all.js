@@ -27840,7 +27840,7 @@ UE.ui = baidu.editor.ui = {};
     var iframeUrlMap = {
         'anchor':'~/dialogs/anchor/anchor.html',
         'insertimage':'~/dialogs/image/image.html',
-        'link':'~/dialogs/link/link.html',
+        'link': require('file-loader!./link.html'),
         'spechars':'~/dialogs/spechars/spechars.html',
         'searchreplace':'~/dialogs/searchreplace/searchreplace.html',
         'map':'~/dialogs/map/map.html',
