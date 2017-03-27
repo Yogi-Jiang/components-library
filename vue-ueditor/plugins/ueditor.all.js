@@ -27274,7 +27274,7 @@ UE.ui = baidu.editor.ui = {};
             var dialogBodyStyle = body.style;
             dialogBodyStyle.width = width;
             document.getElementsByClassName('edui-dialog-content')[0].style.height = "300px";
-            return { width: 600, height: 368, left: 0, top: 0 }
+            return { width: 652, height: 368, left: 0, top: 0 }
         },
         _onTitlebarMouseDown: function (evt, el){
             if (this.draggable) {
