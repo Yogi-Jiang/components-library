@@ -339,7 +339,7 @@
         //iframeUrlMap
         //dialog内容的路径 ～会被替换成URL,垓属性一旦打开，将覆盖所有的dialog的默认路径
         ,iframeUrlMap:{
-           'insertimage':'static/ueditor/dialogs/image/image.html',
+           'insertimage': require('file-loader!./image.html'),
         }
 
         //allowLinkProtocol 允许的链接地址，有这些前缀的链接地址不会自动添加http
