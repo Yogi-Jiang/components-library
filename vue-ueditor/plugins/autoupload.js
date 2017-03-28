@@ -40,7 +40,7 @@ UE.plugin.register('autoupload', function (){
                 '/images/spacer.gif" title="' + (me.getLang('autoupload.loading') || '') + '" >';
             successHandler = function(data) {
                 
-                var link = data.imageUrlPrefix + data.url,
+                var link = data.url,
                     loader = me.document.getElementById(loadingId);
                 if (loader) {
                     loader.setAttribute('src', link);
